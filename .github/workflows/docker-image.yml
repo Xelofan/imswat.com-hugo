@@ -31,6 +31,12 @@ jobs:
   docker-build:
     runs-on: ubuntu-latest
     steps:
+    - name: Wait for hugo-build
+      uses: NathanFirmo/wait-for-other-job@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        job: 'hugo-build'
+        
     - name: Change repository name to lowercase
       env:
         repo: "${{ github.repository }}"
