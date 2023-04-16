@@ -1,4 +1,4 @@
-name: Build and push Docker image
+name: Build Hugo & Docker & Push Docker image
 
 on:
   #schedule:
@@ -13,29 +13,14 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  
-  hugo-build:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Hugo snap
-      run: |
-        sudo snap install hugo
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        submodules: recursive
-    - name: Build Hugo static website
-      run: |
-        hugo
-  
-  docker-build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Wait for hugo-build
-      uses: NathanFirmo/wait-for-other-job@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        job: 'hugo-build'
+    #- name: Wait for hugo-build
+    #  uses: NathanFirmo/wait-for-other-job@v1
+    #  with:
+    #    token: ${{ secrets.GITHUB_TOKEN }}
+    #    job: 'hugo-build'
         
     - name: Change repository name to lowercase
       env:
@@ -56,8 +41,18 @@ jobs:
         echo ::set-output name=tags::${TAGS}
         echo ::set-output name=docker_image::${{ env.REPOSITORY }}
         
-    #- name: Checkout
-    #  uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+      
+    - name: Install Hugo snap
+      run: |
+        sudo snap install hugo
+        
+    - name: Build Hugo static website
+      run: |
+        hugo
       
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
