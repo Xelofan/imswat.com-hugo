@@ -19,13 +19,21 @@ favicon = "img/IMSWAT.png"
 name = "TeamSpeak"
 url = "https://imswat.com/ts"
 weight = 10
-target = "_blank"
+
+[[menu.main]]
+name = "MOHAA"
+url = "/mohaa"
+weight = 11
+
+[[menu.main]]
+name = "WoW Guild"
+url = "https://raider.io/guilds/eu/arathor/imswat"
+weight = 12
 
 [[menu.main]]
 name = "YouTube"
 url = "https://imswat.com/yt"
-weight = 10
-post = "target='_BLANK'"
+weight = 15
 
 [[menu.main]]
 name = "Stats"
