@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+		<article>
+			<h1 class="head-blog">{{ .Title }}</h1>
+			<div class="time">{{ dateFormat "2006. January 02." .Date }} - <span style="font-size: smaller;">Írta: {{ .Params.author }}</span> {{ if eq .Params.draft true }}<b style="color: red;">DRAFT</b>{{ end }}
+			<br><span style="font-size: smaller;">Olvasási idő: ~{{ .ReadingTime }} perc</span></div>
+			<div>
+				{{ .Content }}
+			</div>
+
+		</article>
+	</div>
+	<!--{{ partial "related.html" .}}-->
+{{ end }}

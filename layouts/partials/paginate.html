@@ -1,0 +1,11 @@
+<div class="container">
+    {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL | safeURL }}">Előző oldal</a>
+    {{ end }}
+    {{ if ne .Paginator.PageNumber 1 }}
+        {{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}
+        {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL | safeURL }}">Következő oldal</a>
+        {{ end }}
+    {{ end }}
+</div>

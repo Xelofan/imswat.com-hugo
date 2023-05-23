@@ -1,0 +1,42 @@
+baseURL: "https://imswat.com"
+languageCode: "hu"
+defaultContentLanguage: hu
+title: "IMSWAT REBORNED"
+theme: "hugo-cat"
+
+enableEmoji: true
+PygmentsCodeFences: true
+PygmentsStyle: "solarized-dark256"
+pluralizelisttitles: "false"
+watch: true
+enableInlineShortcodes: true
+
+params:
+  ava: "img/IMSWAT.png"
+  #owner = "Since 2011"
+  talk: "Since 2011"
+  favicon: "img/IMSWAT.png"
+
+menu:
+  main:
+    - name: "TeamSpeak"
+      url: "https://imswat.com/ts"
+      weight: 10
+    - name: "MOHAA"
+      url: "/mohaa"
+      weight: 11
+    - name: WoW Guild
+      url: https://raider.io/guilds/eu/arathor/imswat
+      weight: 12
+    - name: YouTube
+      url: https://imswat.com/yt
+      weight: 15
+    - name: Stats
+      url: https://stats.imswat.com
+      weight: 30
+    - name: Uptime
+      url: https://uptime.imswat.com
+      weight: 40
+    # - name: Leírások
+    #   url: /leirasok
+    #   weight: 50
