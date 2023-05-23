@@ -29,7 +29,7 @@ Az alábbi leírás egy kiegészítő a YouTube-on található videónkhoz, de �
 
 
 ## Java verziók
-Feltételezem, hogy ha Minecraft szervert szeretnél futtatni, már van megfelelő Java verzió a gépeden, de a nincs, az alábbi táblázat, ami egyébként a [**Paper** szerverekhez lett készítve](https://docs.papermc.io/paper/getting-started), segítséget adhat a megfelelő verzió használatához:
+Feltételezem, hogy ha Minecraft szervert szeretnél futtatni, már van megfelelő Java verzió a gépeden, de ha nincs, az alábbi táblázat, ami egyébként a [**Paper** szerverekhez lett készítve](https://docs.papermc.io/paper/getting-started), segítséget adhat a megfelelő verzió használatához:
 
 | Verzió | Ajánlott Java verzió |
 | :---: | :---: |
@@ -65,15 +65,15 @@ Természetesen van még rengeteg más lehetőség, például **Forge** és **Fab
 
 ### Melyiket válaszd, ha nem tudsz dönteni
 
-Ha nem tudod, hogy melyiket válaszd, akkor a **Paper**t ajánlanám, hiszen nem lesz instabil a játékmenet a rengeteg optimalizációnak köszönhetően, ellentétben a **Vanilla**-val. Azért nem **Purpur**t, mert nem mindig elérhető belőle frissítés, ha kijön egy újabb verzió, és a sok beállítás zavaró lehet kezdő Minecraft szerver futtatóknak, de egyébként én ezt szoktam használni.
+Ha nem tudod, hogy melyiket válaszd, akkor a **Paper**t ajánlanám, hiszen nem lesz instabil a játékmenet a rengeteg optimalizációnak köszönhetően, ellentétben a **Vanilla**-val. Azért nem **Purpur**t, mert nem mindig érhető el belőle frissítés egyből, ha kijön egy újabb verzió, és a sok beállítás zavaró lehet kezdő Minecraft szerver futtatóknak, de egyébként én ezt szoktam használni.
 
 A videóban **Paper**t használtam, hiszen a rengeteg hibajavításnak és optimalizációnak köszönhetően stabil játékmenetet nyújt.
 
 ## Indítófájl létrehozása
 
-Azután, hogy eldöntöttük melyik szerver fogjuk használni, hozzunk neki létre egy mappát és rakjuk bele a fájlt.
-
 Ahhoz, hogy el tudjuk indítani a szervert, szükségünk lesz egy indítófájlra, aminek bármilyen nevet adhatunk, de **ami fontos, hogy .bat-ra végződjön**.
+
+Azután, hogy eldöntöttük melyik szervert fogjuk használni, hozzunk neki létre egy mappát és rakjuk bele a fájlt.
 
 A legkönnyebben úgy tudjuk ezt a fájlt létrehozni, hogy nyitunk egy Jegyzettömböt, majd az alábbi parancsot belemásoljuk:
 
@@ -81,11 +81,13 @@ A legkönnyebben úgy tudjuk ezt a fájlt létrehozni, hogy nyitunk egy Jegyzett
 java -Xms1G -Xmx3G -jar papermc.jar --nogui
 PAUSE
 ```
-Módosítsd a RAM beállításokat, hogy a rendszerednek megfelelően legyen beállítva *(segítség alább)* és a .jar fájlod nevét, ha más.
+Módosítsd a RAM beállításokat, hogy a rendszerednek megfelelően legyen beállítva *(segítség alább)* és a .jar fájlod nevét, ha más.  
 {{< figure src="notepad-save-as.png" >}}
 {{< figure src="save.png" >}}
 
 Miután ezzel megvagyunk, nyomjunk bal fent a **Fájl**ra, **Mentés másként**, keressük meg a mappát ahol van a .jar fájl és mentsük el oda.
+
+Mentésnél bármilyen nevet megadhatunk, de ügyenjünk a **.bat végződésre**. Én az egyszerűség kedvéért **start.bat**-nak neveztem el.
 
 ### Magyarázat
 - **java**: Meghívjuk a Java-t.
@@ -107,7 +109,7 @@ eula=true
 
 ## A szerver elindítása
 
-Most, hogy mindennel megvagyunk, elindíthatjuk a Minecraft szervert. **Mindössze annyit kell tennünk, hogy elindítjuk a start.bat fájlt.** Ezzel megnyílik a szerver konzol és OP-t adhatunk magunknak, ha szeretnénk.
+Most, hogy mindennel megvagyunk, elindíthatjuk a Minecraft szervert. **Mindössze annyit kell tennünk, hogy elindítjuk a start.bat fájlt** *(vagy aminek el lett nevezve)*. Ezzel megnyílik a szerver konzol és OP-t adhatunk magunknak, ha szeretnénk.
 
 {{< figure src="console.png" title="A képen adtam magamnak OP-t, az \"op név\" paranccsal." >}}
 
