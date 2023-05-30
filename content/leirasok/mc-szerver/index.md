@@ -55,12 +55,12 @@ Természetesen van még rengeteg más lehetőség, például **Forge** és **Fab
 - **CraftBukkit**: Az első módosított szerver, ami képes pluginokat futtatni, de kevésbé optimalizált. Ahhoz hogy legálisan lehessen használni, a [**SpigotMC BuildTools**](https://www.spigotmc.org/wiki/buildtools/)-ra lesz szükség a .jar fájl legenerálásához.
 - **Spigot**: A legnépszerűbb szerver, a **CraftBukkit** egy forkja, ami több száz javítást és optimalizációt tartalmaz. Ahhoz hogy legálisan lehessen használni, a [**SpigotMC BuildTools**](https://www.spigotmc.org/wiki/buildtools/)-ra lesz szükség a .jar fájl legenerálásához.
 - **Paper**: Ez is az egyik legnépszerűbb szerver, a **Spigot** egy forkja. 200+ patchet tartalmaz és rengeteg játékmenettel kapcsolatos beállítás konfigurálható. Remek alternatíva a **Spigot**ra, ha nem szeretnénk **BuildTools**-zal foglalkozni.
-- **Purpur**: A **Tuinity** egy forkja *(ami egyébként a **Paper** egy forkja)*. A **Paper** rengeteg állítható beállításai mellé plusz beállításokat, hibajavításokat és optimalizációkat ad.
+- **Purpur**: A **Paper** egy forkja. A **Paper** rengeteg állítható beállításai mellé plusz beállításokat, hibajavításokat és optimalizációkat ad.
 
 ```goat
-   .---------.          .-------------.  fork   .--------.  fork  .-------.  fork   .---------.  fork  .--------.
-   | Vanilla | +----->  | CraftBukkit | +---->  | Spigot | +----> | Paper | +---->  | Tuinity | +----> | Purpur |
-   .---------.          .-------------.         .--------.        .-------.         .---------.        .--------.
+   .---------.          .-------------.  fork   .--------.  fork  .-------.  fork  .--------.
+   | Vanilla |          | CraftBukkit | +---->  | Spigot | +----> | Paper | +----> | Purpur |
+   .---------.          .-------------.         .--------.        .-------.        .--------.
 ```
 
 ### Melyiket válaszd, ha nem tudsz dönteni
@@ -81,7 +81,7 @@ A legkönnyebben úgy tudjuk ezt a fájlt létrehozni, hogy nyitunk egy Jegyzett
 java -Xms1G -Xmx3G -jar papermc.jar --nogui
 PAUSE
 ```
-Módosítsd a RAM beállításokat, hogy a rendszerednek megfelelően legyen beállítva *(segítség alább)* és a .jar fájlod nevét, ha más.  
+Módosítsd a RAM beállításokat, hogy a rendszerednek megfelelően legyen beállítva [*(segítség alább)*](#magyarázat) és a .jar fájlod nevét, ha más.  
 {{< figure src="notepad-save-as.png" >}}
 {{< figure src="save.png" >}}
 
