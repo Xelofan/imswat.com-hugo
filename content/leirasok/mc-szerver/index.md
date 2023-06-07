@@ -1,6 +1,6 @@
 ---
 title: Minecraft Java Szerver Készítés Windows-on
-date: 2023-05-23T00:13:22.936Z
+date: 2023-06-07T16:13:22.936Z
 draft: false
 author: Xelofan
 categories:
@@ -13,8 +13,8 @@ description: "Kiegészítő leírás az ugyan ezen a néven megtalálható YouTu
 ---
 
 Az alábbi leírás egy kiegészítő a YouTube-on található videónkhoz, de önmagában is hasznos lehet:
-{{< youtube u__JT5tYZI4 >}}
-🎥 [Videó](https://www.youtube.com/watch?v=u__JT5tYZI4)
+{{< youtube Fj_5VhWkhtg >}}
+🎥 [Videó](https://youtu.be/Fj_5VhWkhtg)
 
 ### Tartalom
 - [Java verziók](#{{< anchorize "Java verziók" >}})
@@ -70,15 +70,14 @@ Ha nem tudod, hogy melyiket válaszd, akkor a **Paper**t ajánlanám, hiszen nem
 A videóban **Paper**t használtam, hiszen a rengeteg hibajavításnak és optimalizációnak köszönhetően stabil játékmenetet nyújt.
 
 ## Indítófájl létrehozása
+Azután, hogy eldöntöttük melyik szervert fogjuk használni, hozzunk neki létre egy mappát.
 
 Ahhoz, hogy el tudjuk indítani a szervert, szükségünk lesz egy indítófájlra, aminek bármilyen nevet adhatunk, de **ami fontos, hogy .bat-ra végződjön**.
-
-Azután, hogy eldöntöttük melyik szervert fogjuk használni, hozzunk neki létre egy mappát és rakjuk bele a fájlt.
 
 A legkönnyebben úgy tudjuk ezt a fájlt létrehozni, hogy nyitunk egy Jegyzettömböt, majd az alábbi parancsot belemásoljuk:
 
 ```batch
-java -Xms1G -Xmx3G -jar papermc.jar --nogui
+java -Xms1G -Xmx3G -jar paper.jar --nogui
 PAUSE
 ```
 Módosítsd a RAM beállításokat, hogy a rendszerednek megfelelően legyen beállítva [*(segítség alább)*](#magyarázat) és a .jar fájlod nevét, ha más.  
@@ -92,8 +91,8 @@ Mentésnél bármilyen nevet megadhatunk, de ügyenjünk a **.bat végződésre*
 ### Magyarázat
 - **java**: Meghívjuk a Java-t.
 - **-Xms**: Minimum RAM. *(pl.: 3GiB RAM-nál -Xms3G, vagy 1500MiB RAM-nál -Xms1500M)*
-- **-Xmx**: Maximum RAM. *(pl.: 3GiB RAM-nál -XmX3G, vagy 1500MiB RAM-nál -Xmx1500M)* **Soha ne add meg neki a rendszer összes memóriáját, kb. 1500MiB RAM-ot mindig hagyj szabadon!**
-- **-jar papermc.jar**: Megadjuk, hogy melyik fájlt szeretnénk használni.
+- **-Xmx**: Maximum RAM. *(pl.: 3GiB RAM-nál -Xmx3G, vagy 1500MiB RAM-nál -Xmx1500M)* **Soha ne add meg neki a rendszer összes memóriáját, kb. 1500MiB RAM-ot mindig hagyj szabadon!**
+- **-jar paper.jar**: Megadjuk, hogy melyik fájlt szeretnénk használni.
 - **--nogui**: Eltüntetjük az amúgy megjelentő fehér konzol ablakot, ami zavaró lehet, mert ilyenkor 2 ablak van megnyitva. ***Nem kötelező***
 - **PAUSE**: Ha leáll/crashel a szerver ne tűnjön el a konzol, hibakereséshez tökéletes. ***Nem kötelező***
 
@@ -114,4 +113,4 @@ Most, hogy mindennel megvagyunk, elindíthatjuk a Minecraft szervert. **Mindöss
 {{< figure src="console.png" title="A képen adtam magamnak OP-t, az \"op név\" paranccsal." >}}
 
 ## Zárás
-Ha valami problémába ütköztél, vagy szeretnéd, hogy kiegészítsük még valamivel ezt a leírást, hagyj egy kommentet az [ehhez kapcsolódó videónk]() alatt!
+Ha valami problémába ütköztél, vagy szeretnéd, hogy kiegészítsük még valamivel ezt a leírást, hagyj egy kommentet az [ehhez kapcsolódó videónk](https://youtu.be/Fj_5VhWkhtg) alatt!

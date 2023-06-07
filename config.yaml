@@ -37,6 +37,6 @@ menu:
     - name: Uptime
       url: https://uptime.imswat.com
       weight: 40
-    # - name: Leírások
-    #   url: /leirasok
-    #   weight: 50
+    - name: Leírások
+      url: /leirasok/
+      weight: 50
