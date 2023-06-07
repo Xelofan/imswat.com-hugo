@@ -1,6 +1,6 @@
 ---
 title: Minecraft Java Szerver Készítés Windows-on
-date: 2023-06-07T16:13:22.936Z
+date: 2023-06-07
 draft: false
 author: Xelofan
 categories:
