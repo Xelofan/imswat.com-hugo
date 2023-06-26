@@ -25,9 +25,9 @@ menu:
     - name: "MOHAA"
       url: "/mohaa"
       weight: 11
-    - name: WoW Guild
-      url: https://raider.io/guilds/eu/arathor/imswat
-      weight: 12
+    # - name: WoW Guild
+    #   url: https://raider.io/guilds/eu/arathor/imswat
+    #   weight: 12
     - name: YouTube
       url: https://imswat.com/yt
       weight: 15
