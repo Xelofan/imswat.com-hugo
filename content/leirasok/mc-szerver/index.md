@@ -14,7 +14,7 @@ description: "Kiegészítő leírás az ugyan ezen a néven megtalálható YouTu
 
 Az alábbi leírás egy kiegészítő a YouTube-on található videónkhoz, de önmagában is hasznos lehet:
 {{< youtube Fj_5VhWkhtg >}}
-🎥 [Videó](https://youtu.be/Fj_5VhWkhtg)
+🎥 [Videó](https://imst.hu/Nrnka)
 
 ### Tartalom
 - [Java verziók](#{{< anchorize "Java verziók" >}})
@@ -113,4 +113,4 @@ Most, hogy mindennel megvagyunk, elindíthatjuk a Minecraft szervert. **Mindöss
 {{< figure src="console.png" title="A képen adtam magamnak OP-t, az \"op név\" paranccsal." >}}
 
 ## Zárás
-Ha valami problémába ütköztél, vagy szeretnéd, hogy kiegészítsük még valamivel ezt a leírást, hagyj egy kommentet az [ehhez kapcsolódó videónk](https://youtu.be/Fj_5VhWkhtg) alatt!
+Ha valami problémába ütköztél, vagy szeretnéd, hogy kiegészítsük még valamivel ezt a leírást, hagyj egy kommentet az [ehhez kapcsolódó videónk](https://imst.hu/Nrnka) alatt!

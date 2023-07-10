@@ -20,7 +20,7 @@ params:
 menu:
   main:
     - name: "TeamSpeak"
-      url: "https://imswat.com/ts"
+      url: "https://imst.hu/ts"
       weight: 10
     - name: "MOHAA"
       url: "/mohaa"
@@ -29,13 +29,13 @@ menu:
     #   url: https://raider.io/guilds/eu/arathor/imswat
     #   weight: 12
     - name: YouTube
-      url: https://imswat.com/yt
+      url: https://imst.hu/yt
       weight: 15
     - name: Stats
-      url: https://stats.imswat.com
+      url: https://imst.hu/stats
       weight: 30
     - name: Uptime
-      url: https://uptime.imswat.com
+      url: https://imst.hu/uptime
       weight: 40
     - name: Leírások
       url: /leirasok/
