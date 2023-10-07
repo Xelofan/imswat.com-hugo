@@ -34,7 +34,7 @@ jobs:
         VERSION=latest
         
         if [[ ${{ github.ref_name }} != "master" ]]; then
-          VERSION=${{ github.ref_name }}
+          VERSION=${{ github.ref_name }} | tr / _
         fi
         TAGS="${{ env.REGISTRY }}/${{ env.REPOSITORY }}:${VERSION}"
         
@@ -46,13 +46,13 @@ jobs:
       with:
         submodules: recursive
       
-    - name: Install Hugo snap
-      run: |
-        sudo snap install hugo
+    # - name: Install Hugo snap
+    #   run: |
+    #     sudo snap install hugo
         
-    - name: Build Hugo static website
-      run: |
-        hugo
+    # - name: Build Hugo static website
+    #   run: |
+    #     hugo --ignoreCache
       
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
@@ -76,6 +76,7 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         context: .
         file: ./Dockerfile
-        platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v8
+        platforms: linux/amd64,linux/arm64
+        # platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v8
         push: true
         tags: ${{ steps.ver.outputs.tags }}
