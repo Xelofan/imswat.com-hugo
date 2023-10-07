@@ -11,11 +11,11 @@
 ## BUILD
 FROM hugomods/hugo:exts as builder
 
-ARG HUGO_BASEURL=
-ENV HUGO_BASEURL=${HUGO_BASEURL}
+# ARG HUGO_BASEURL=
+# ENV HUGO_BASEURL=${HUGO_BASEURL}
 
 COPY . /src
-RUN hugo --gc --enableGitInfo
+RUN hugo --gc --ignoreCache
 
 ## FINAL
 FROM hugomods/hugo:nginx
