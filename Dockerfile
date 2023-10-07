@@ -15,7 +15,7 @@ ARG HUGO_BASEURL=
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 
 COPY . /src
-RUN hugo --minify --gc --enableGitInfo
+RUN hugo --gc --enableGitInfo
 
 ## FINAL
 FROM hugomods/hugo:nginx
