@@ -52,7 +52,7 @@ jobs:
         
     - name: Build Hugo static website
       run: |
-        hugo
+        hugo --ignoreCache
       
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
