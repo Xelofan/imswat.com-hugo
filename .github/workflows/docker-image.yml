@@ -34,7 +34,7 @@ jobs:
         VERSION=latest
         
         if [[ ${{ github.ref_name }} != "master" ]]; then
-          VERSION=${{ github.ref_name }}
+          VERSION=${{ github.ref_name }} | tr / _
         fi
         TAGS="${{ env.REGISTRY }}/${{ env.REPOSITORY }}:${VERSION}"
         
