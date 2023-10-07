@@ -1,9 +1,8 @@
----
-layout: staticpage
----
-<div class="ava-text" style="padding-bottom: 50px; ">
-    <h3>IMSWAT REBORNED</h3>
-    <p>Since 2011</p>
+{{ define "main" }}
+<!-- {{ partial "ava.html" . }} -->
+<div class="ava-text" style="padding-bottom: 25px; padding-top: 50px;">
+    <h3>TSViewer</h3>
+    <!-- <p>Since 2011</p> -->
 </div>
 <center>
 <div id="ts3viewer_1128829" style="width:550px; "> </div>
@@ -14,3 +13,4 @@ var ts3v_url_1 = "https://www.tsviewer.com/ts3viewer.php?ID=1128829&text=f2efef&
 ts3v_display.init(ts3v_url_1, 1128829, 100);
 </script>
 </center>
+{{ end }}
