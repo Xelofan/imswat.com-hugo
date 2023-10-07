@@ -46,13 +46,13 @@ jobs:
       with:
         submodules: recursive
       
-    - name: Install Hugo snap
-      run: |
-        sudo snap install hugo
+    # - name: Install Hugo snap
+    #   run: |
+    #     sudo snap install hugo
         
-    - name: Build Hugo static website
-      run: |
-        hugo --ignoreCache
+    # - name: Build Hugo static website
+    #   run: |
+    #     hugo --ignoreCache
       
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
