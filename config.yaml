@@ -19,9 +19,9 @@ params:
 
 menu:
   main:
-    - name: "TeamSpeak"
-      url: "https://imst.hu/ts"
-      weight: 10
+    # - name: "TeamSpeak"
+    #   url: "https://imst.hu/ts"
+    #   weight: 10
     - name: "MOHAA"
       url: "/mohaa"
       weight: 11
@@ -31,12 +31,12 @@ menu:
     - name: YouTube
       url: https://imst.hu/yt
       weight: 15
-    - name: Stats
-      url: https://imst.hu/stats
-      weight: 30
-    - name: Uptime
-      url: https://imst.hu/uptime
-      weight: 40
-    - name: Leírások
-      url: /leirasok/
-      weight: 50
+    # - name: Stats
+    #   url: https://imst.hu/stats
+    #   weight: 30
+    # - name: Uptime
+    #   url: https://imst.hu/uptime
+    #   weight: 40
+    # - name: Leírások
+    #   url: /leirasok/
+    #   weight: 50
